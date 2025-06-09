@@ -1,0 +1,2 @@
+document.querySelectorAll(".tree li").forEach(function(e){var t=Array.from(e.childNodes).find(function(e){return 1===e.nodeType&&"UL"===e.tagName});if(t){var n=Array.from(e.childNodes).find(function(e){return 3===e.nodeType&&e.textContent.trim().length});if(n){var r=document.createElement("span");r.textContent=n.textContent.trim(),e.insertBefore(r,n),e.removeChild(n),r.addEventListener("click",function(e){t.style.display="none"===t.style.display?"":"none",e.stopPropagation()})}}});
+//# sourceMappingURL=index.7132e7fd.js.map

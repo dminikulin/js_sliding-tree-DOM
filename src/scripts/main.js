@@ -22,6 +22,8 @@ listItems.forEach((item) => {
       item.insertBefore(span, textNode);
       item.removeChild(textNode);
 
+      childList.style.display = 'none';
+
       span.addEventListener('click', (e) => {
         childList.style.display =
           childList.style.display === 'none' ? '' : 'none';
